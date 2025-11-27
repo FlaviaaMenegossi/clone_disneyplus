@@ -19,6 +19,11 @@
 
     &__links{
         margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        
 
 
         &__item{
@@ -38,5 +43,32 @@
 
     p{
         margin-bottom: 16px;
+    }
+}
+
+.language-selector{
+    display: flex;
+    align-items: center;
+
+    img{
+        height: 18px;
+        width: 18px;
+    }
+
+    select{
+        background-color: transparent;
+        border: none;
+        color: variaveis.$corTextoPrincipal;
+        height: 38px;
+        cursor: pointer;
+
+
+        &:hover{
+            color: variaveis.$corTextoPrincipal;
+        }
+
+        option{
+            color: variaveis.$corDeFundo;
+        }
     }
 }
